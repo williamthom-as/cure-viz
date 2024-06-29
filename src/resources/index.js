@@ -27,5 +27,6 @@ export function configure(config) {
     './elements/page-header',
     './elements/dropdown-menu',
     './elements/alert',
+    './elements/qr-code',
   ]);
 }

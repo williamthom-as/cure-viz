@@ -94,5 +94,4 @@ export class DynTable {
 
     return highlightFn(this.filter, text)
   }
-
 }

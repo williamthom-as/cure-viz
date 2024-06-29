@@ -30,7 +30,12 @@
             if.bind="jsonCrushStr"
             help-text="Use this if you have a big dashboard">
           </validatable-field>
+
+          <div class="mt-1 mb-1">
+            <qr-code data.bind="jsonCrushStr" if.bind="jsonCrushStr"></qr-code>
+          </div>
         </div>
+
         <div class="modal-footer">
           <button type="button" class="btn btn-muted btn-y-padding" click.trigger="controller.cancel()">Close</button>
           <div>

@@ -15,6 +15,10 @@
             Title
             <i class="fas fa-caret-${sortAsc ? 'up' : 'down'}" if.bind="sortableColumn == 'content.title'"></i>
           </th>
+          <th class="sortable" click.trigger="sort('from')">
+            Type
+            <i class="fas fa-caret-${sortAsc ? 'up' : 'down'}" if.bind="sortableColumn == 'from'"></i>
+          </th>
           <th class="sortable" click.trigger="sort('createdAt')">
             Date
             <i class="fas fa-caret-${sortAsc ? 'up' : 'down'}" if.bind="sortableColumn == 'createdAt'"></i>
@@ -32,6 +36,9 @@
             </div>
             <span class="text-small text-secondary" if.bind="dashboard.content.description">${dashboard.content.description}</span>
             <span class="text-small text-secondary" else>No description given</span>
+          </td>
+          <td>
+            ${dashboard.from}
           </td>
           <td class="text-truncate">
             <div>
